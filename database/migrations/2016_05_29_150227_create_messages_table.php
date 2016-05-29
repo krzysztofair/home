@@ -14,6 +14,8 @@ class CreateMessagesTable extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('sensor_id')->unsigned();
+            $table->foreign('sensor_id')->references('id')->on('sensors');
             $table->string('topic');
             $table->text('body');
             $table->timestamps();

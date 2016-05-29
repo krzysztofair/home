@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'api', 'middleware' => 'api'], function() {
+
+    Route::resource('messages', 'MessagesController');
+
+});

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Message extends Model
 {
-    protected $fillable = [ 'body', 'message' ];
+    protected $fillable = ['topic', 'body', 'sensor_id' ];
 }
