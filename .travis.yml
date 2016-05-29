@@ -1,2 +1,2 @@
 install:
-  - npm install
+  - npm install -g npm@2
