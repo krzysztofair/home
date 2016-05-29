@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'home', 'uses' => 'DashboardController@index']);
 
 Route::group(['prefix' => 'api', 'middleware' => 'api'], function() {
 

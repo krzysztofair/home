@@ -1,2 +1,18 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+$font-family-sans-serif: 'Lato', sans-serif;
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+body {
+  margin-top: 70px;
+}
+
+.sensor {
+
+  text-align: center;
+
+  i.glyphicon {
+    font-size: 50px;
+    margin: 10px auto;
+  }
+
+}

@@ -23,6 +23,6 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(\App\Sensor::class, function (\Faker\Generator $faker) {
     return [
         'type' => $faker->userName,
-        'state' => ''
+        'state' => json_encode([])
     ];
 });
